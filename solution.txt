@@ -1,0 +1,87 @@
+257  cd unit1
+  258  cd ..
+  259  cd ../..
+  260  ls
+  261  cd homework
+  262  git clone git@git.generalassemb.ly:seir-1213/Star_Wars_CLI_Deliverable.git
+  263  cd homework
+  264  ls
+  265  cd Star_Wars_CLI_Deliverable
+  266  code .
+  267  ls
+  268  cd act1.sh
+  269  mkdir star_wars
+  270  cd star_wars
+  271  mkdir {empire,rebellion}
+  272  ls
+  273  cd empire
+  274  touch darth_vader.txt
+  275  echo "...heavy breathing..." > darth_vader.txt
+  276  touch emperor_palpatine.txt
+  277  mkdir death_star
+  278  ls
+  279  mv emperor_palpatine.txt /death_star
+  280  cd death_star
+  281  ls
+  282  cd ..
+  283  mv darth_vader.txt /death_star
+  284  mv darth_vader.txt death_star
+  285  cd ..
+  286  cd empire
+  287  echo "Help me, Obi-Wan...You're my only hope." >  star_wars/rebellion/princess_leia.txt
+  288  cd ..
+  289  cd rebellion
+  290  echo "Help me, Obi-Wan...You're my only hope." >  rebellion/princess_leia.txt
+  291  echo "Help me, Obi-Wan...You're my only hope." >>  rebellion/princess_leia.txt
+  292  echo "Help me, Obi-Wan...You're my only hope." >>  princess_leia.txt
+  293  touch obi_wan.txt luke.skywalker.txt
+  294  mkdir millenium_falcon
+  295  touch millenium_falcon/{han_solo.txt,luke_skywalker.txt}
+  296  cd millenium_falcon
+  297  ls
+  298  rm luke_skywalker.txt
+  299  ls
+  300  touch millenium_falcon/chewbacca.txt
+  301  touch chewbacca.txt
+  302  ls
+  303  cd ..
+  304  ls
+  305  mv {luke.skywalker.txt,obi_wan.txt,princess_leia.txt} millenium_falcon
+  306  mv millenium_falcon death_star
+  307  touch millenium_falcon
+  308  cd death_star
+  309  mv {luke.skywalker.txt,obi_wan.txt,princess_leia.txt,han_solo.txt,chewbacca.txt} millenium_falcon
+  310  mv {luke.skywalker.txt,obi_wan.txt,princess_leia.txt,han_solo.txt,chewbacca.txt} rebellion/millenium_falcon
+  311  mv {luke.skywalker.txt,obi_wan.txt,princess_leia.txt,han_solo.txt,chewbacca.txt} rebellion
+  312  touch millenium_falcon
+  313  mv *.txt millenium_falcon
+  314  mv {luke.skywalker.txt,obi_wan.txt,princess_leia.txt,han_solo.txt,chewbacca.txt} millenium_falcon
+  315  cd rebellion
+  316  cd ..
+  317  mv death_star millenium_falcon
+  318  mv rebellion/millenium_falcon death_star
+  319  cd star_wars
+  320  cd ..
+  321  mv rebellion/millenium_falcon empire/death_star
+  322  git add .
+  323  git commit -m "Act 1 and 2"
+  324  git push origin master
+  325  mv empire/death_star/millenium_falcon/* empire/death_star
+  326  cd empire/death_star/millenium_falcon
+  327  cd ..
+  328  rm obi_wan.txt
+  329  mv {chewbacca.txt,han_solo.txt,luke.skywalker.txt,princess_leia.txt} millenium_falcon
+  330  cd ..
+  331  mv death_star/millenium_falcon rebellion
+  332  mv rebellion death_star/millenium_falcon
+  333  mv death_star/millenium_falcon death_star/rebellion
+  334  mv death_star/rebellion death_star/millenium_falcon
+  335  mv death_star/millenium_falcon star_wars/rebellion
+  336  cd ..
+  337  mv death_star/millenium_falcon star_wars/rebellion
+  338  mv death_star/millenium_falcon rebellion
+  339  mv empire/death_star/millenium_falcon rebellion
+  340  mv empire/death_star/darth_vader.txt empire
+  341  rm empire/death_star
+  342  rmdir empire/death_star
+  343  rm -r empire/death_star
